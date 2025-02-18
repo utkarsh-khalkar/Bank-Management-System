@@ -11,14 +11,7 @@ public class Loan {
     private double interestRate;
     private double remainingLoanAmount;
 
-    public Loan() {}
 
-    public Loan(String accountNumber, double loanAmount, double interestRate) {
-        this.accountNumber = accountNumber;
-        this.loanAmount = loanAmount;
-        this.interestRate = interestRate;
-        this.remainingLoanAmount = loanAmount;
-    }
 
     // Getters and Setters
     public String getAccountNumber() {

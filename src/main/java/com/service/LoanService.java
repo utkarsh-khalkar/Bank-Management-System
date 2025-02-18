@@ -22,6 +22,8 @@ public class LoanService {
         if (loanExists(loan.getAccountNumber())) {
             return "Loan Already Exists for this Account";
         }
+
+        loan.setRemainingLoanAmount(loan.getLoanAmount());
         loans.add(loan);
         log.info("END :: CLASS :: LoanService :: METHOD :: applyForLoan  :: ACCOUNT NUMBER :: "+loan.getAccountNumber());
         return "Loan Applied Successfully";

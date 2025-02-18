@@ -14,15 +14,7 @@ public class Account {
     private String accountType;
     private double balance;
 
-    // Constructors
-    public Account() {}
 
-    public Account(String accountNumber, String holderName, String accountType, double balance) {
-        this.accountNumber = accountNumber;
-        this.holderName = holderName;
-        this.accountType = accountType;
-        this.balance = balance;
-    }
 
     // Getters and Setters
     public String getAccountNumber() {
